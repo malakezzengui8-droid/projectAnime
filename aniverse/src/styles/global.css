@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ---------- Reset ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f3eb;
+  color: #2f241f;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ---------- Colors ---------- */
+
+:root {
+  --background: #f8f3eb;
+  --surface: #efe3d2;
+  --card: #e6d2b5;
+
+  --primary: #8b5e3c;
+  --secondary: #b87a4b;
+
+  --text: #2f241f;
+  --text-light: #6e625a;
+
+  --border: #d9c4a7;
+
+  --white: #ffffff;
+  --danger: #dc3545;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #714729;
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #a96d41;
+}
+
+/* ---------- Titles ---------- */
+
+.section-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.page-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 50px;
+  text-align: center;
+  margin: 40px 0;
+}
