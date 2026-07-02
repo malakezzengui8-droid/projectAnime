@@ -31,7 +31,7 @@ function Home() {
 
   if (loading) {
     return (
-      <div className="container">
+      <div className="container section">
         <h2>Loading...</h2>
       </div>
     );
@@ -39,7 +39,7 @@ function Home() {
 
   if (error) {
     return (
-      <div className="container">
+      <div className="container section">
         <h2>{error}</h2>
       </div>
     );
@@ -47,13 +47,9 @@ function Home() {
 
   return (
     <main className="home">
-
       <section className="hero">
-
-        <div className="container hero-content">
-
+        <div className="container section hero-content">
           <div className="hero-text">
-
             <h1>
               Welcome to <span>AniVerse</span>
             </h1>
@@ -65,41 +61,29 @@ function Home() {
             <Link to="/anime" className="btn btn-primary">
               Explore Anime
             </Link>
-
           </div>
-
         </div>
-
       </section>
 
-      <section className="container section">
-
+      <section className="container trending section">
         <h2 className="section-title">Trending Anime</h2>
 
         <div className="anime-grid">
-
           {trendingAnime.map((anime) => (
             <AnimeCard key={anime.mal_id} anime={anime} />
           ))}
-
         </div>
-
       </section>
 
-      <section className="container section">
-
+      <section className="container seasonal section">
         <h2 className="section-title">Seasonal Anime</h2>
 
         <div className="anime-grid">
-
           {seasonalAnime.map((anime) => (
             <AnimeCard key={anime.mal_id} anime={anime} />
           ))}
-
         </div>
-
       </section>
-
     </main>
   );
 }

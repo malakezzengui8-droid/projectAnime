@@ -50,6 +50,9 @@ img {
   margin: auto;
 }
 
+.section {
+  min-height: 100vh;
+}
 /* ---------- Colors ---------- */
 
 :root {
